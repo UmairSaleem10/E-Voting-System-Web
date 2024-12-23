@@ -1,0 +1,118 @@
+body {
+  font-family: "Verdana", sans-serif; /* Change font to Verdana */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Adjust min-height for better centering */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("../assets/eth5.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px; /* Adjust max-width for responsiveness */
+  background-color: rgba(0, 0, 0, 0.85); /* Adjust background color opacity */
+  padding: 40px;
+  border-radius: 10px; /* Increase border-radius for smoother edges */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Adjust box-shadow for depth */
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 36px; /* Increase font size for headings */
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+legend {
+  font-size: 28px; /* Increase font size for legends */
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%; /* Adjust table width */
+  margin: 0 auto; /* Center the table horizontally */
+  margin-bottom: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Adjust background color opacity */
+  border-radius: 8px;
+}
+
+th {
+  font-size: 20px; /* Increase font size for table headings */
+  color: #000000;
+}
+
+td {
+  font-size: 18px; /* Increase font size for table data */
+  color: #000000;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%; /* Adjust input width */
+  padding: 14px; /* Adjust padding */
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #333333; /* Change input text color */
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+  width: 50%; /* Adjust button width */
+  padding: 14px;
+  background-color: #198a7b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #44afa1;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+#Aday {
+  font-size: 20px; /* Increase font size */
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
